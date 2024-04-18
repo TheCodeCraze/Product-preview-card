@@ -22,7 +22,7 @@ export const App = () => {
         <button className={styles.cta}>
           <img
             src="/icon-cart.svg"
-            alt="Add to cart"
+            alt="Add item to your cart"
             className={styles["cta-icon"]}
           />
           Add to Cart
