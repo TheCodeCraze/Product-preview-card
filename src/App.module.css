@@ -22,6 +22,7 @@
 .type {
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: 500;
   color: var(--dark-grayish-blue);
   letter-spacing: 5px;
 }
@@ -30,11 +31,13 @@
 .new {
   font-family: "Fraunces", serif;
   font-size: 32px;
+  font-weight: 700;
   color: var(--very-dark-blue);
   line-height: 32px;
 }
 
 .description {
+  font-weight: 500;
   color: var(--dark-grayish-blue);
   line-height: 23px;
 }
@@ -51,6 +54,7 @@
 
 .old {
   font-size: 13px;
+  font-weight: 500;
   color: var(--dark-grayish-blue);
   text-decoration: line-through;
   line-height: 23px;
@@ -74,4 +78,30 @@
 
 .cta:hover {
   background: var(--darker-cyan);
+}
+
+@media screen and (max-width: 630px) {
+  .product {
+    width: 400px;
+    height: 611px;
+    flex-direction: column;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 240px;
+    content: url("/image-product-mobile.jpg");
+    border-radius: 10px 10px 0 0;
+  }
+
+  .product-info {
+    width: 100%;
+    height: 371px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .product {
+    width: 343px;
+  }
 }
